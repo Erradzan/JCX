@@ -23,22 +23,32 @@
 - Sets the character encoding to UTF-8.
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport">
 ```
 - Makes the webpage responsive on different devices.
 
 ```html
-<meta name="keywords" content="music, jamming, chords, lyrics, translation, exercise, experience">
+<meta name="keywords">
 ```
 - Specifies keywords related to the content.
 
 ```html
-<meta property="og:title" content="JUANCOOXX">
+<meta name="author">
+```
+- Define the author of the page
+
+```html
+<meta name="twitter">
+```
+- Attach rich media (such as images, videos, and other multimedia) to tweets that link to your content
+
+```html
+<meta property="og:title">
 ```
 - Sets the Open Graph title for social media.
 
 ```html
-<meta property="og:description" content="Konoha's Favorite Music Web for jamming while looking at chords, and lyrics.">
+<meta property="og:description">
 ```
 - Sets the Open Graph description for social media.
 
@@ -75,7 +85,12 @@
 ```html
 <h2></h2>
 ```
-- Subheading.
+- Level 2 heading.
+
+```html
+<h3></h3>
+```
+- Level 3 heading.
 
 ```html
 <p></p>
@@ -83,24 +98,9 @@
 - Paragraph of text.
 
 ```html
-<nav></nav>
+<div class="#"></div>
 ```
-- Defines a set of navigation links.
-
-```html
-<table></table>
-```
-- Used for making a table.
-
-```html
-<tr></tr>
-```
-- Used for making a row in a table.
-
-```html
-<td></td>
-```
-- To fill a cell in a table.
+- Generic container for content.
 
 ```html
 <a href="#"></a>
@@ -108,39 +108,49 @@
 - A link to another page.
 
 ```html
-<form action="#" method="post"></form>
+<script></script>
 ```
-- A form for user input, sent via POST.
-
-```html
-<label for="input-username"></label>
-```
-- Label for the username input.
-
-```html
-<input type="text" id="input-username" name="username">
-```
-- Text input for username.
-
-```html
-<input type="password" id="input-password" name="password">
-```
-- Password input.
-
-```html
-<button type="submit">Log In</button>
-```
-- Submit button.
-
-```html
-<button type="button">Sign Up</button>
-```
-- Button for signing up.
+- Embed or reference executable code, usually JavaScript.
 
 ```html
 <main></main>
 ```
 - Contains the main content of the page.
+
+```html
+<label></label>
+```
+- Define a label for an <input> element.
+
+```html
+<input>
+```
+- Create various types of input fields within a form.
+
+```html
+<form></form>
+```
+- Create a form for user input.
+
+```html
+<button></button>
+```
+- Submit button.
+
+```html
+<audio></audio>
+```
+- Embed sound content in documents.
+
+```html
+<figure></figure>
+```
+- Mark up a photo in a document.
+
+```html
+<figcaption></figcaption>
+```
+- Define a caption for the photo.
 
 ```html
 <footer></footer>

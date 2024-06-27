@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="music, jamming, chords, lyrics, translation, exercise, experience">
-    <meta name="description" content="Konoha's Favorite Music Web for jamming while looking at chords, and lyrics.">
+    <meta name="description" content="Konoha's Favorite. Fun Unique Compatible Keen">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Er Radzan">
     <meta property="og:title" content="JUANCOOXX">
-    <meta property="og:description" content="Konoha's Favorite Music Web for jamming while looking at chords, and lyrics.">
+    <meta property="og:description" content="Konoha's Favorite. Fun Unique Compatible Keen">
     <title>JUANCOOXX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Support/Icon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/13ad75dda7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="JUANCOOXX.css">
 </head>
 <body>
     <header>
         <section class="center">
-            <div>
-                <h1>JUANCOOXX</h1>
-                <h2>Jamming Utility Audio Network Collection Organized Output Xercise & Xperience</h2>
-                <p>Konoha's Favorite Music Web</p>
+            <div class="center-content">
+                <img src="Support/Big Logo.png" alt="Logo">
+                <div>
+                    <h1>JUANCOOXX</h1>
+                    <h2>Jamming Utility Audio Network Collection Organized Output Xercise & Xperience</h2>
+                    <h3>Konoha's Favorite</h3>
+                    <p>Fun Unique Compatible Keen</p>
+                </div>
             </div>
         </section>
         <div class="navbar">
@@ -27,29 +37,108 @@
                 <div class="line"></div>
             </div>
             <div class="menu" id="menu">
-                <a href="#home">Home</a>
-                <a href="#playlist">Playlist</a>
-                <a href="#sessions">Sessions</a>
-                <a href="#genres">Genres</a>
-                <a href="#login">Login</a>
-                <a href="#signup">Sign Up</a>
+                <button onclick="document.location='index.html'" type="button"><i class="fas fa-house"></i>Home</button>
+                <button onclick="document.location='playlist.html'" type="button"><i class="fas fa-stream"></i>Playlist</button>
+                <button onclick="document.location='sessions.html'" type="button"><i class="fas fa-clipboard-list"></i>Sessions</button>
+                <button onclick="document.getElementById('genres').style.display='block'" style="width:auto;"><i class="fas fa-music"></i>Genres</button>
+                <div id="genres" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="genres-container">
+                            <span onclick="document.getElementById('genres').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+                        <div class="container">
+                            <button type="button"><a href="#">Best 70's</a></button>
+                            <button type="button"><a href="#">Best 80's</a></button>
+                            <button type="button"><a href="#">Best 90's</a></button>
+                            <button type="button"><a href="#">Rock</a></button>
+                            <button type="button"><a href="#">Classic</a></button>
+                            <button type="button"><a href="#">R&B</a></button>
+                            <button type="button"><a href="#">Hip-hop</a></button>
+                            <button type="button"><a href="#">Country</a></button>
+                            <button type="button"><a href="#">Traditional</a></button>
+                            <button type="button"><a href="#">Dangdut</a></button>
+                            <button type="button"><a href="#">House</a></button>
+                            <button type="button"><a href="#">Soul</a></button>
+                            <button type="button"><a href="#">Jazz</a></button>
+                            <button type="button"><a href="#">Reggae</a></button>
+                            <button type="button"><a href="#">Pop</a></button>
+                            <button type="button"><a href="#">Funk</a></button>
+                            <button type="button"><a href="#">Blues</a></button>
+                            <button type="button"><a href="#">Metal</a></button>
+                            <button type="button"><a href="#">Folk</a></button>
+                            <button type="button"><a href="#">Punk</a></button>
+                        </div>
+                    </form>
+                </div>
+                <button onclick="document.getElementById('login').style.display='block'" style="width:auto;"><i class="fas fa-key"></i>Login</button>
+                <div id="login" class="modal">
+                    <form class="modal-content1 animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="https://media.istockphoto.com/id/175748158/vector/music-fanatic-woman.jpg?s=612x612&w=0&k=20&c=Ss9b7vS5DrIHrZx3m98Ngcl1Y8Rd88Km1wkeAYzYRp0=" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <div class="container">
+                            <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="button" onclick="document.getElementById('recover').style.display='none'" class="forgot">Forgot Password?</button>
+                        </div>
+                    </form>
+                </div>
+                <button onclick="document.getElementById('signup').style.display='block'" style="width:auto;"><i class="fas fa-user-plus"></i>Sign Up</button>
+                <div id="signup" class="modal">
+                    <form class="modal-content2 animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="https://media.istockphoto.com/id/175748158/vector/music-fanatic-woman.jpg?s=612x612&w=0&k=20&c=Ss9b7vS5DrIHrZx3m98Ngcl1Y8Rd88Km1wkeAYzYRp0=" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="container">
+                            <h2>Sign Up</h2>
+                            <p>Please fill this form to create an account.</p>
+                            <hr>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="mail" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                            <label for="birthday"><b>Birthday</b></label>
+                            <input type="date" placeholder="birthday" name="birthday" required> 
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Sign Up</button>
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <script src="Script.js"></script>
     </header>
     <main>
         <div>
             <h2 class="left-align">Featured Tracks</h2>
             <div class="form-container-search">
-                <form action="#" method="get">
+                <form action="/action_page.php" method="get">
                     <div class="form-group-search">
                         <label for="Search">Search:</label>
                         <input type="text" id="Search" name="query" placeholder="Artist, Tracks, Album, Genres">
-                        <button type="submit">Search</button>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
                     </div>
                 </form> 
             </div>
-            <div class="container">
+            <div class="track-container">
                 <div class="track-item">
                     <img title="Ningrat Album" src="https://i.scdn.co/image/ab67616d0000b27324b61da8bf04b67e9f48f632" alt="Album Cover">
                     <h3 class="details1">Ningrat</h3>
@@ -62,9 +151,7 @@
                     <p class="details"> 
                         <a href="#"><b title="Chords Available">Chords</b></a>
                     </p>    
-                    <p class="details1">
-                        <input type="checkbox" id="Add1" name="Add Jamming Session">Add to Jamming Session
-                    </p>
+                    <button type="submit"><i class="fas fa-plus"></i>Add to Sessions</button>
                     <div class="audio1">
                         <audio controls>
                             <source src="Support/Ningrat .mp3" type="audio/mpeg">
@@ -83,9 +170,7 @@
                     <p class="details"> 
                         <a href="#"><b title="Chords Available">Chords</b></a>
                     </p>  
-                    <p class="details1">
-                        <input type="checkbox" id="Add2" name="Add Jamming Session">Add to Jamming Session
-                    </p>
+                    <button type="submit"><i class="fas fa-plus"></i>Add to Sessions</button>
                     <div class="audio1">
                         <audio controls>
                             <source src="Support/Nyanyian Kode.mp3" type="audio/mpeg">
@@ -104,9 +189,7 @@
                     <p class="details"> 
                         <a href="#"><b title="Chords Available">Chords</b></a>
                     </p>
-                    <p class="details1">
-                        <input type="checkbox" id="Add3" name="Add Jamming Session">Add to Jamming Session
-                    </p>
+                    <button type="submit"><i class="fas fa-plus"></i>Add to Sessions</button>
                     <div class="audio1">
                         <audio controls>
                             <source src="Support/炎 (Homura) .mp3" type="audio/mpeg">
@@ -125,52 +208,155 @@
                     <p class="details"> 
                         <a href="#"><b title="Chords Available">Chords</b></a>
                     </p>
-                    <p class="details1">
-                        <input type="checkbox" id="Add4" name="Add Jamming Session">Add to Jamming Session
-                    </p>
+                    <button type="submit"><i class="fas fa-plus"></i>Add to Sessions</button>
                     <div class="audio1">
                         <audio controls>
                             <source src="Support/Skyfall .mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
+                <div class="track-item">
+                    <img title="Blinding Lights Album" src="https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png" alt="Album Cover">
+                    <h3 class="details1">Blinding Lights</h3>
+                    <p class="details">
+                        <a href="#"><b title="See Artist">The Weeknd</b></a>
+                    </p>
+                    <p class="details">
+                        <a href="#"><b title="Lyrics & Translation Available">Lyrics & Translation</b></a>
+                    </p>
+                    <p class="details"> 
+                        <a href="#"><b title="Chords Available">Chords</b></a>
+                    </p>
+                    <button type="submit"><i class="fas fa-plus"></i>Add to Sessions</button>
+                    <div class="audio1">
+                        <audio controls>
+                            <source src="Support/Blinding Lights.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <div class="bonus">
-        <h2>Bonus</h2>
-        <p>If someone mocks your progress, let them hear this audio 😊</p>
-        <audio controls>
-            <source src="Support/Bonus .mp3" type="audio/mpeg">
-        </audio>
-        <em>P.S. for legal purposes, we will not include lyrics to this audio</em>
-    </div>
-    <div>
-        <h2 class="left-align">Join Us</h2>
-        <p class="left-align">Log in now to unlock exclusive features and enjoy a premium music experience. Whether you're a seasoned musician, aspiring music enthusiast, or just want to enjoy music. JUANCOOXX is here to support you on your musical journey. Experience the difference that our innovative audio network solutions can make.</p>
-        <figure>
-            <img src="https://i.imgflip.com/23ub56.jpg" alt="triggered lady" id="anim1">
-            <figcaption><em>"You didn't Log In??" -Triggered Lady-</em></figcaption>
-        </figure>
-    </div>
+    <div class="asymmetric-container">
+        <div id="join">
+            <h2>Join Us</h2>
+            <p>
+                Log in now to unlock exclusive features and enjoy a premium music experience. Whether you're a seasoned musician, an aspiring music enthusiast, or just someone who loves music, JUANCOOX is here to support you on your musical journey. Experience the difference that our innovative audio network solutions can make.<br>
+                By joining JUANCOOX, you gain access to a wide array of tools designed to enhance your musical experience. Our platform offers high-quality streaming with an extensive library of tracks, ensuring you never run out of new music to explore. Enjoy seamless playback, curated playlists, and personalized recommendations tailored to your tastes.<br>
+                Experience the ultimate music platform with JUANCOOX. Log in now and start your musical adventure today!
+            </p>
+            <p class="p2">
+                Additionally, JUANCOOX provides access to lyrics and chords for your favorite songs, making it easier for you to sing along or play your instrument. Our intuitive interface ensures that finding and playing music is a breeze, whether you’re at home or on the go. With offline listening options, you can enjoy your favorite tracks anytime, anywhere.<br>
+                Connect with a vibrant community of music lovers and musicians on JUANCOOX. Share your experiences, get feedback on your musical projects, and collaborate with others to create new and exciting music. Participate in community events, challenges, and live sessions to enhance your skills and broaden your musical horizons.<br>
+                Our platform also supports aspiring artists by providing tools to upload and share their own music. Gain exposure and build your fanbase with JUANCOOX’s artist-friendly features. Track your performance with detailed analytics and connect with industry professionals to take your music career to the next level.<br>
+            </p>
+        </div>
+        <div id="artist">
+            <h2>Top Artist</h2>
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/LiSA_on_PF28_stage_20180520b_%28cropped%29_%28cropped%29.jpg/800px-LiSA_on_PF28_stage_20180520b_%28cropped%29_%28cropped%29.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Tulus_Performs_at_Jakarta_International_Jazz_Java_Festival_2020_%28cropped%29.jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavqmff2Na5Qn-K2XBWiOhX1pmmvA-7CktRw&s" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Mahalini_on_Opening_Ceremony_Fornas_VI.png/800px-Mahalini_on_Opening_Ceremony_Fornas_VI.png" alt="Image 4">
+                        </div>
+                        <div class="slide">
+                            <img src="https://yt3.googleusercontent.com/5GTdgOUts50y6z1b9gJ2OmYrHZFO7uLIoMmA_HblQyI4X1XA_nWU0apFLwVp8KYURQNx6HbFJA=s900-c-k-c0x00ffffff-no-rj" alt="Image 5">
+                        </div>
+                        <div class="slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-B0PR4T3vCDIzyyMwtgwtGdRixwHnscWSrA&s" alt="Image 6">
+                        </div>
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/LiSA_on_PF28_stage_20180520b_%28cropped%29_%28cropped%29.jpg/800px-LiSA_on_PF28_stage_20180520b_%28cropped%29_%28cropped%29.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Tulus_Performs_at_Jakarta_International_Jazz_Java_Festival_2020_%28cropped%29.jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavqmff2Na5Qn-K2XBWiOhX1pmmvA-7CktRw&s" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="album">
+            <h2>Top Album</h2>
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://cdn.musebycl.io/2021-01/Nirvana.jpg" alt="Image 9">
+                        </div>
+                        <div class="slide">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/31/b7/6d/31b76dd3-5fef-180e-bbe6-7d4880227ccd/4547366588255.jpg/600x600bf-60.jpg" alt="Image 9">
+                        </div>
+                        <div class="slide">
+                            <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a6a86b0-271c-4960-9e33-370ec0435b52_600x600.jpeg" alt="Image 10">
+                        </div>
+                        <div class="slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YOTfE7QNCGwvS8WBqgWx6VKHuxfxgQb8Jw&s" alt="Image 11">
+                        </div>
+                        <div class="slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRo9gIo2m9_XOu_LgQ1E-a77-GTd1fMi8Wxg&s" alt="Image 12">
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.thomann.de/blog/wp-content/uploads/2222/07/2014Nirvana_Nevermind_150414-2.jpg" alt="Image 13">
+                        </div>
+                        <div class="slide">
+                            <img src="https://cdn.musebycl.io/2021-01/Nirvana.jpg" alt="Image 9">
+                        </div>
+                        <div class="slide">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/31/b7/6d/31b76dd3-5fef-180e-bbe6-7d4880227ccd/4547366588255.jpg/600x600bf-60.jpg" alt="Image 9">
+                        </div>
+                        <div class="slide">
+                            <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a6a86b0-271c-4960-9e33-370ec0435b52_600x600.jpeg" alt="Image 10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="meme">
+            <picture>
+                <source media="(min-width:769px)" srcset="https://us-tuna-sounds-images.voicemod.net/dfb7e6bf-b2a7-42e8-a83c-6dbc02e3a11a.jpg">
+                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/153305595/original/0634a8607f4c9f02d7bdc6bcf79ef88e6ed3a1fb/photoshop-your-face-in-triggered-meme.png" alt="triggered">
+                <p><em>"You didn't Log In??"</em></p>
+            </picture>
+        </div>
+        <div id="bonus">
+            <h2>Bonus</h2>
+            <p>If someone mocks your progress, let them hear this audio 😊</p>
+            <audio controls>
+                <source src="Support/Bonus .mp3" type="audio/mpeg">
+            </audio>
+            <p>P.S. for legal purposes, we will not include lyrics to this audio</p>
+        </div>
+    </div>    
     <footer>
-        <div>
-            <h3>Contact Us</h3>
-            <p>Email: HQ@juancooxx.com</p>
-            <p>Phone: 0809-8-9999</p>
+        <div class="footer-content">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: HQ@juancooxx.com</p>
+                <p>Phone: 0809-8-9999</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-x-twitter"></i>X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Follow Us</h3>
-            <p>Stay connected with us on social media for updates and more:</p>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>&copy; 2024 JUANCOOXX. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 JUANCOOXX. All rights reserved.</p>
     </footer>
+    <script src="JUANCOOXX.js"></script>
 </body>
 </html>

@@ -2,7 +2,49 @@
  JUANCOOXX [^1] is a specialized utility designed to facilitate audio networking for jamming sessions. It comprises a unique collection of practical tools and components that enhance the utility and functionality of audio equipment connections. This platform is tailored for musicians and audio enthusiasts who seek a comprehensive and distinctive solution for their audio networking needs. JUANCOOXX not only focuses on organized output but also emphasizes continuous exercise and experience, making it an ideal choice for those looking to improve their skills and enjoy a seamless jamming experience.
 
 ## Visit
-https://revou-fsse-5.github.io/module-1-Erradzan/
+https://www.jcxmusic.site/
+
+## Deployment
+(This deployment is made with the assumption that the GitHub repository is updated.)
+
+<img src="Support/Deploy 1.png" alt="vercel">
+at vercel front page, look for import project.
+
+<img src="Support/Deploy 2.png" alt="vercel">
+import git repository, in this stage i choose JCX.
+
+<img src="Support/Deploy 3.png" alt="vercel">
+input the  project name, after that click deploy.
+
+<img src="Support/Deploy 4.png" alt="vercel">
+after deployed, click continue to dashboard.
+
+<img src="Support/Deploy 5.png" alt="vercel">
+and then click domain.
+
+<img src="Support/Deploy 6.png" alt="vercel">
+after that, input site name that has been purchased from the web hosting provider.
+
+<img src="Support/Deploy 7.png" alt="vercel">
+choose recommended then add.
+
+<img src="Support/Deploy 8.png" alt="vercel">
+it will be invalid, click nameserver, copy.
+
+<img src="Support/Deploy 9.png" alt="vercel">
+open web hosting provider, find site name that has been purchased, click manage.
+
+<img src="Support/Deploy 10.png" alt="vercel">
+edit dns/nameserver
+
+<img src="Support/Deploy 11.png" alt="vercel">
+paste and save.
+
+<img src="Support/Deploy 12.png" alt="vercel">
+wait until dns/nameserver changed.
+
+<img src="Support/Deploy 13.png" alt="vercel">
+when it's finished open the site.
 
 ## Tags
 ```html

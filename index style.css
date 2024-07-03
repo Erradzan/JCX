@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Support/background.png');
+    background-size: cover;
+    background-position: center;
+    color: #29b3cb;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side1 {
+    transform: rotateY(0deg);
+}
+
+.side2 {
+    transform: rotateY(180deg);
+}
+
+.coin {
+    animation: spin 3s infinite linear;
+}
+
+img.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.letsgo {
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #29b3cb 50%, #021b29);
+    color: #021b29;
+}
+
+.letsgo:hover {
+    background: linear-gradient(to bottom right, #021b29 40%, #29b3cb);
+    color: #29b3cb;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px #ffffff;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

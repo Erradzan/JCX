@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="music, jamming, chords, lyrics, translation, exercise, experience">
+    <meta name="description" content="Konoha's Favorite. Fun Unique Compatible Keen">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Er Radzan">
+    <meta property="og:title" content="JUANCOOXX">
+    <meta property="og:description" content="Konoha's Favorite. Fun Unique Compatible Keen">
+    <title>JUANCOOXX</title>
+    <link rel="icon" type="image/png" href="Support/Light Icon.png" sizes="32x32" id="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/13ad75dda7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="play style.css">
+</head>
+<body>
+    <section class="center">
+        <h1>Sorry, Not Implemented Yet.</h1>
+        <h2>Please Wait For Update.</h2>
+        <h3>Thanks For The Support.</h3>
+    </section>
+    <div class="navbar">
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <button id="darkModeToggle" class="dark-mode-btn">Dark Mode</button>
+        <div class="menu" id="menu">
+            <button onclick="document.location='home.html'" type="button"><i class="fas fa-house"></i>Home</button>
+            <button onclick="document.location='playlist.html'" type="button"><i class="fas fa-stream"></i>Playlist</button>
+            <button onclick="document.location='sessions.html'" type="button"><i class="fas fa-clipboard-list"></i>Sessions</button>
+            <button onclick="document.getElementById('genres').style.display='block'" style="width:auto;"><i class="fas fa-music"></i>Genres</button>
+            <div id="genres" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="genres-container">
+                        <span onclick="document.getElementById('genres').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                        <button type="button"><a href="#">Best 70's</a></button>
+                        <button type="button"><a href="#">Best 80's</a></button>
+                        <button type="button"><a href="#">Best 90's</a></button>
+                        <button type="button"><a href="#">Rock</a></button>
+                        <button type="button"><a href="#">Classic</a></button>
+                        <button type="button"><a href="#">R&B</a></button>
+                        <button type="button"><a href="#">Hip-hop</a></button>
+                        <button type="button"><a href="#">Country</a></button>
+                        <button type="button"><a href="#">Traditional</a></button>
+                        <button type="button"><a href="#">Dangdut</a></button>
+                        <button type="button"><a href="#">House</a></button>
+                        <button type="button"><a href="#">Soul</a></button>
+                        <button type="button"><a href="#">Jazz</a></button>
+                        <button type="button"><a href="#">Reggae</a></button>
+                        <button type="button"><a href="#">Pop</a></button>
+                        <button type="button"><a href="#">Funk</a></button>
+                        <button type="button"><a href="#">Blues</a></button>
+                        <button type="button"><a href="#">Metal</a></button>
+                        <button type="button"><a href="#">Folk</a></button>
+                        <button type="button"><a href="#">Punk</a></button>
+                    </div>
+                </form>
+            </div>
+            <button onclick="document.getElementById('login').style.display='block'" style="width:auto;"><i class="fas fa-key"></i>Login</button>
+            <div id="login" class="modal">
+                <form class="modal-content1 animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="Support/user.webp" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container">
+                        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="button" onclick="document.getElementById('recover').style.display='none'" class="forgot">Forgot Password?</button>
+                    </div>
+                </form>
+            </div>
+            <button onclick="document.getElementById('signup').style.display='block'" style="width:auto;"><i class="fas fa-user-plus"></i>Sign Up</button>
+            <div id="signup" class="modal">
+                <form class="modal-content2 animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="Support/user.webp" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <h2>Sign Up</h2>
+                        <p>Please fill this form to create an account.</p>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="mail" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <label for="birthday"><b>Birthday</b></label>
+                        <input type="date" placeholder="birthday" name="birthday" required> 
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
+</html>

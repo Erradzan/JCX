@@ -1,0 +1,356 @@
+body {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #29b3cb 50%, #021b29);
+    background-color: #29b3cb;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #021b29;
+}
+
+h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29b3cb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+}
+
+input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  
+button {
+    color: #29b3cb;
+    background-color: #021b29;
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+button:hover {
+    background-color: transparent;
+    color: #021b29;
+}
+  
+.cancelbtn {
+    width: auto;
+    padding: 1px 15px;
+    background-color: #021b29;
+}
+
+.cancelbtn:hover {
+    background-color: red;
+    color: #021b29;
+    cursor: pointer;
+}
+
+.forgot {
+    width: auto;
+    padding: 1px 15px;
+    background-color: #021b29;
+}
+
+.forgot:hover {
+    background-color: transparent;
+    color: #021b29;
+    cursor: pointer;
+}
+  
+.genres-container {
+    text-align: center;
+    margin-top: 2px;
+    position: relative;
+}
+
+.genre-button {
+    border: 2px #ffffff;
+    background-color:#021b29;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.genre-button:hover {
+    background-color: transparent;
+    color: #021b29;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+  
+.container {
+    padding: 16px;
+}
+
+.container input {
+    border-radius: 10px;
+}
+
+span.a {
+    background-color: #021b29;
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+  
+.modal-content {
+    background-color: #29b3cb;
+    color: #021b29;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+  
+.modal-content1 {
+    background-color: #29b3cb;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.modal-content2 {
+    background-color: #29b3cb;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 37%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #021b29;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #021b29;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.menu a {
+    color: #29b3cb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 0.5px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: transparent;
+    color: #021b29;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: transparent;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .hamburger.open .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu a {
+        border: 1px solid #ffffff;
+        border-radius: 0;
+        text-align: left;
+        padding: 10px 20px;
+    }
+}
+
+body.dark-mode {
+    background-image: linear-gradient(to bottom right, #021b29 50%, #29b3cb);
+    background-color: #021b29;
+    color: #ffffff;
+}
+
+body.dark-mode .line {
+    background-color: #29b3cb;
+}
+
+body.dark-mode .center {
+    color: #29b3cb;
+}
+
+body.dark-mode .navbar {
+    background-color: #021b29;
+}
+
+body.dark-mode button {
+    background-color: #29b3cb;
+    color: #021b29;
+    border-color: #ffffff;
+}
+
+body.dark-mode button:hover {
+    background-color: transparent;
+    color: #29b3cb;
+}
+
+body.dark-mode .cancelbtn {
+    background-color: #29b3cb;
+    color: #021b29;
+    border-color: #ffffff;
+}
+
+body.dark-mode .cancelbtn:hover {
+    background-color: red;
+    color: #021b29;
+}
+
+body.dark-mode .forgot {
+    background-color: #29b3cb;
+}
+
+body.dark-mode .forgot:hover {
+    background-color: transparent;
+    color: #021b29;
+}
+
+body.dark-mode .genre-button {
+    background-color: #29b3cb;
+    color: #021b29;
+}
+
+body.dark-mode .genre-button:hover {
+    background-color: transparent;
+    color: #29b3cb;
+}
+
+body.dark-mode span.a {
+    background-color: #29b3cb;
+}
+
+body.dark-mode .modal-content {
+    background-color: #021b29;
+}
+
+body.dark-mode .modal-content1 {
+    background-color: #021b29;
+}
+
+body.dark-mode .modal-content2 {
+    background-color: #021b29;
+}
+
+body.dark-mode .close {
+    color: #29b3cb;
+}
+
+body.dark-mode .close:hover {
+    color: red;
+}
+
+body.dark-mode .menu a {
+    background-color: #29b3cb;
+    color: #021b29;
+}
+
+body.dark-mode .menu a:hover {
+    background-color: transparent;
+    color: #29b3cb;
+}

@@ -1,9 +1,11 @@
 body {
     display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('Support/background.png');
+    background-image: url('Support/background.webp');
     background-size: cover;
     background-position: center;
     color: #29b3cb;

@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url('Support/background.png');
+    background-image: url('Support/background.webp');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -670,6 +670,22 @@ body.dark-mode .navbar {
     background-color: #021b29;
 }
 
+body.dark-mode .line {
+    background-color: #29b3cb;
+}
+
+body.dark-mode .modal-content {
+    background-color: #021b29;
+}
+
+body.dark-mode .modal-content1 {
+    background-color: #021b29;
+}
+
+body.dark-mode .modal-content2 {
+    background-color: #021b29;
+}
+
 body.dark-mode button {
     background-color: #29b3cb;
     color: #021b29;
@@ -687,21 +703,21 @@ body.dark-mode .cancelbtn {
     border-color: #ffffff;
 }
 
-body.darkmode .cancelbtn:hover {
+body.dark-mode .cancelbtn:hover {
     background-color: red;
     color: #021b29;
 }
 
-body.darkmode .forgot {
+body.dark-mode .forgot {
     background-color: #29b3cb;
 }
 
-body.darkmode .forgot:hover {
+body.dark-mode .forgot:hover {
     background-color: transparent;
     color: #021b29;
 }
 
-body.darkmode .genre-button {
+body.dark-mode .genre-button {
     background-color: #29b3cb;
     color: #021b29;
 }
@@ -711,27 +727,15 @@ body.dark-mode .genre-button:hover {
     color: #29b3cb;
 }
 
-body.darkmode span.a {
+body.dark-mode span.a {
     background-color: #29b3cb;
 }
 
-body.darkmode .modal-content {
-    background-color: #021b29;
-}
-
-body.darkmode .modal-content1 {
-    background-color: #021b29;
-}
-
-body.darkmode .modal-content2 {
-    background-color: #021b29;
-}
-
-body.darkmode .close {
+body.dark-mode .close {
     color: #29b3cb;
 }
 
-body.darkmode .close:hover {
+body.dark-mode .close:hover {
     color: red;
 }
 
